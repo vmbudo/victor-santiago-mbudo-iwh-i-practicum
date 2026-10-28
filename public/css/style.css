@@ -1,58 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: serif;
+  margin: 16px;
 }
 
-h1 {
-    margin: 1rem;
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin-top: 16px;
 }
 
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+th, td {
+  border: 1px solid #ccc;
+  padding: 4px;
 }
 
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+th {
+  background-color: pink;
 }
 
-.card__email {
-    font-size: 1rem;
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin-top: 16px;
 }
 
-.form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+label {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-label, input {
-    margin-top: 5px;
-    display: block;
-    font-size: inherit;
+input {
+  padding: 6px;
+  margin-top: 4px;
 }
 
-input[type="text"] {
-    padding: .25rem;
-}
-
-input[type="submit"] {
-    background-color: lightgrey;
-    border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
+input[type='submit'] {
+  margin-top: 16px;
+  cursor: pointer;
 }

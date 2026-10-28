@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Update Custom Object Form
+    a(href='/') Volver a la página principal
+    form(action='/update-cobj', method='POST')
+      label(for='name') Name
+      input#name(type='text', name='name', placeholder='Animal Crossing: New Horizons', required)
+      label(for='publisher') Publisher
+      input#publisher(type='text', name='publisher', placeholder='Nintendo', required)
+      label(for='price') Price
+      input#price(type='number', name='price', placeholder='60', required)
+      input(type='submit', value='Create')
